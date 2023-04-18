@@ -1,0 +1,23 @@
+@function getGridSize() {
+    @return map-get($settings-grid, 'cols');
+}
+
+@function getGridSizeMobile() {
+    @return map-get($settings-grid, 'colsMobile');
+}
+
+@function getDesktopGutterSize() {
+    @return map-get($settings-grid, 'gutter-desktop');
+}
+
+@function getMobileGutterSize() {
+    @return map-get($settings-grid, 'gutter-mobile');
+}
+
+@function getGridBreakpoints() {
+    @return map-get($settings-grid, 'breakpoints');
+}
+
+@function getMobilePadding() {
+    @return map-get($settings-grid, 'mobile-padding');
+}

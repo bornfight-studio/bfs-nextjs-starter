@@ -1,0 +1,29 @@
+.main {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    z-index: getZindex('modal');
+    overflow: auto;
+    background-color: $black-10;
+    padding: 20px;
+}
+
+.inner {
+    display: block;
+    height: 100%;
+    background-color: $white;
+    border: 1px solid $black;
+    padding: 20px;
+}
+
+.container {
+    display: block;
+}
+
+.btn {
+    text-align: right;
+}

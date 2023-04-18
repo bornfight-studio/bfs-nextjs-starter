@@ -1,0 +1,60 @@
+{
+    "name": "bfs-nextjs-starter",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "dev": "NODE_OPTIONS='--inspect' next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint && eslint --fix .",
+        "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,scss,md,json}' --config ./.prettierrc.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@bornfight/b-reset": "^1.0.8",
+        "body-scroll-lock": "^4.0.0-beta.0",
+        "classnames": "^2.3.2",
+        "fs": "^0.0.1-security",
+        "gsap": "^3.11.5",
+        "next": "^13.3.0",
+        "path": "^0.12.7",
+        "poly-fluid-sizing": "github:bornfight/poly-fluid-sizing",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "sharp": "^0.32.0",
+        "typescript": "^5.0.4",
+        "universal-cookie": "^4.0.4"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.21.4",
+        "@types/node": "^18.15.11",
+        "@types/react": "^18.0.37",
+        "@types/react-dom": "^18.0.11",
+        "@typescript-eslint/parser": "^5.59.0",
+        "babel-loader": "^9.1.2",
+        "cross-env": "^7.0.3",
+        "css-loader": "5.2.7",
+        "eslint": "^8.38.0",
+        "eslint-config-next": "^13.3.0",
+        "eslint-config-prettier": "^8.8.0",
+        "eslint-import-resolver-typescript": "^3.5.5",
+        "eslint-plugin-import": "^2.27.5",
+        "eslint-plugin-jsx-a11y": "^6.7.1",
+        "eslint-plugin-prettier": "^4.2.1",
+        "eslint-plugin-react": "^7.32.2",
+        "eslint-plugin-react-hooks": "^4.6.0",
+        "eslint-plugin-storybook": "^0.6.11",
+        "eslint-plugin-unused-imports": "^2.0.0",
+        "prettier": "^2.8.7",
+        "sass": "^1.62.0",
+        "sass-loader": "^13.2.2",
+        "style-loader": "^3.3.2",
+        "ts-dedent": "^2.2.0",
+        "tsconfig-paths-webpack-plugin": "^4.0.1"
+    },
+    "engines": {
+        "node": "16.x"
+    }
+}
