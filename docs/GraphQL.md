@@ -3,10 +3,25 @@
 ## Installation
 
 ```bash
-yarn add
+yarn add graphql @apollo/client @graphql-codegen/cli @graphql-codegen/client-preset @graphql-codegen/introspection -D
 ```
 
 ## Setup
+
+Create `index.ts` in your `/libs/{cms}` folder.
+
+```typescript
+import { ApolloClient, InMemoryCache } from '@apollo/client';
+
+const client = new ApolloClient({
+    uri: process.env.GRAPHQL_ENDPOINT,
+    cache: new InMemoryCache(),
+});
+
+export default client;
+```
+
+## Codegen
 
 Create `codegen.ts` in project root:
 
@@ -30,7 +45,7 @@ const config: CodegenConfig = {
 export default config;
 ```
 
-## Script
+### Script
 
 Add this to the `package.json` scripts:
 
@@ -38,7 +53,7 @@ Add this to the `package.json` scripts:
 "codegen": "graphql-codegen --require dotenv/config --config codegen.ts dotenv_config_path=.env.local && yarn format"
 ```
 
-## WebStorm/PhpStorm config file
+### WebStorm/PhpStorm config file
 
 Create `.graphqlconfig` and `graphql.json` files in your `/libs/{cms}` folder:
 
