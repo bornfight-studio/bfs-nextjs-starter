@@ -56,6 +56,6 @@
         "tsconfig-paths-webpack-plugin": "^4.0.1"
     },
     "engines": {
-        "node": "16.x"
+        "node": "20.x"
     }
 }
