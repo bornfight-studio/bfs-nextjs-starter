@@ -2,8 +2,6 @@
 
 # Bornfight Studio - Next.js starter
 
-BORNFIGHT STUDIO® project template based on webpack, es6 and scss
-
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/bornfight-studio/bfs-nextjs-starter?style=flat-square)
 ![GitHub issues](https://img.shields.io/github/issues/bornfight-studio/bfs-nextjs-starter?style=flat-square)
 
