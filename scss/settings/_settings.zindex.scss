@@ -1,8 +1,11 @@
-//
-// Z-index map
-//
+/**
+ * Z-index map
+ */
 $settings-zindex: (
-    navigation: 999,
-    a11y: 1000,
-    modal: 2000,
+    modal: 300,
+    navigation: 200,
+    mobile-navigation: 100,
+    default: 1,
+    zero: 0,
+    negative: -1,
 );

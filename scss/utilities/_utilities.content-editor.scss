@@ -1,0 +1,198 @@
+.u-content-editor,
+.rte {
+    word-break: break-word;
+
+    > h2,
+    > h3,
+    > h4,
+    > h5,
+    > h6 {
+        margin-bottom: var(--s-30);
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        + h2,
+        + h3,
+        + h4,
+        + h5,
+        + h6 {
+            margin-top: var(--s-60);
+        }
+
+        > u {
+            text-decoration: underline;
+        }
+
+        > a {
+            text-decoration: underline;
+            transition: getTransition(default, ease-in-quad);
+
+            @include hover {
+            }
+        }
+    }
+
+    > p,
+    > ul,
+    > ol {
+        @include b0;
+
+        margin-bottom: var(--s-15);
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        + h2,
+        + h3,
+        + h4,
+        + h5,
+        + h6 {
+            margin-top: var(--s-60);
+        }
+
+        > u {
+            text-decoration: underline;
+        }
+
+        > a {
+            text-decoration: underline;
+            transition: getTransition(default, ease-in-quad);
+
+            @include hover {
+            }
+        }
+    }
+
+    > h2 {
+        @include a4;
+    }
+
+    > h3 {
+        @include a3;
+    }
+
+    > h4 {
+        @include a2;
+    }
+
+    > h5 {
+        @include a1;
+    }
+
+    > h6 {
+        @include a1;
+    }
+
+    > ul,
+    > ol {
+    }
+
+    li {
+        margin-bottom: var(--s-15);
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    > ul {
+        list-style: disc;
+        margin-left: 1em;
+        padding-left: 1em;
+
+        li {
+            list-style-position: outside;
+            padding-left: 0.5em;
+
+            &::marker {
+            }
+        }
+    }
+
+    > ol {
+        list-style: decimal inside;
+        margin-left: 1em;
+        padding-left: 1em;
+
+        li {
+            list-style-position: outside;
+            padding-left: 0.5em;
+
+            &::marker {
+            }
+        }
+    }
+
+    > u {
+        text-decoration: underline;
+    }
+
+    > a {
+        text-decoration: underline;
+        transition: getTransition(default, ease-in-quad);
+
+        @include hover {
+        }
+    }
+
+    b,
+    strong {
+        font-weight: 700;
+
+        > u {
+            text-decoration: underline;
+        }
+
+        > a {
+            text-decoration: underline;
+            transition: getTransition(default, ease-in-quad);
+
+            @include hover {
+            }
+        }
+    }
+
+    hr {
+        border-top: 1px solid $black;
+        border-left: none;
+        border-right: none;
+        border-bottom: none;
+        padding: 0;
+        margin: var(--s-60) 0;
+        outline: none;
+        box-shadow: none;
+
+        &:first-child {
+            margin-top: 0;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    pre {
+        margin-top: var(--s-60);
+        margin-bottom: var(--s-60);
+        padding: var(--s-30);
+        background-color: $white;
+        color: $black;
+
+        &:first-child {
+            margin-top: 0;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        code {
+            font-size: 0.75em;
+            line-height: 1.5;
+            white-space: pre-wrap;
+        }
+    }
+}

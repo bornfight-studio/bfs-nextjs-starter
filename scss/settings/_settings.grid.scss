@@ -1,13 +1,4 @@
-$settings-grid: (
-    gutter-desktop: 40px,
-    gutter-mobile: 20px,
-    mobile-padding: 20px,
-    cols: 12,
-    colsMobile: 6,
-    breakpoints: (
-        xl,
-        lg,
-        md,
-        sm,
-    ),
-);
+$grid-column-count: 12;
+$grid-mobile-column-count: 12;
+$grid-desktop-gutter-size: 0;
+$grid-mobile-gutter-size: 0;
