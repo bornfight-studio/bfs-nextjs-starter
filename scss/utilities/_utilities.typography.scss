@@ -1,8 +1,36 @@
+/**
+ * Typography utility classes
+ */
+.u-a5 {
+    @include a5;
+}
+
+.u-a4 {
+    @include a4;
+}
+
+.u-a3 {
+    @include a3;
+}
+
+.u-a2 {
+    @include a2;
+}
+
+.u-a1 {
+    @include a1;
+}
+
 .u-b0 {
-    @include fontSize('b0');
-    line-height: 1.2;
-    letter-spacing: -0.01em;
-    font-weight: 400;
+    @include b0;
+}
+
+.u-b1 {
+    @include b1;
+}
+
+.u-b2 {
+    @include b2;
 }
 
 .u-uppercase {
@@ -29,10 +57,6 @@
     text-decoration: underline;
 }
 
-.u-line-through {
-    text-decoration: line-through;
-}
-
 .u-fw-thin,
 .u-fw-100 {
     font-weight: 100;
@@ -48,6 +72,7 @@
     font-weight: 300;
 }
 
+.u-fw-regular,
 .u-fw-normal,
 .u-fw-400 {
     font-weight: 400;
@@ -76,10 +101,4 @@
 .u-fw-black,
 .u-fw-900 {
     font-weight: 900;
-}
-
-.u-ellipsis {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
 }

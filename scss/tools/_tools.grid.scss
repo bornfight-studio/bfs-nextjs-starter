@@ -1,23 +1,27 @@
-@function getGridSize() {
-    @return map-get($settings-grid, 'cols');
+@use "sass:math";
+
+/**
+ * CSS Grid mixin
+ * @param {number} $columns — optional and defaults to _settings.grid.scss -> $grid-column-count
+ * usage:
+ * @include cssGrid()
+ */
+@mixin cssGrid($columns: $grid-column-count, $grid-column-gap: 0, $grid-row-gap: 0) {
+    @if $columns != null {
+        display: grid;
+        grid-template-columns: repeat($columns, 1fr);
+        @if $grid-column-gap != 0 {
+            grid-column-gap: $grid-column-gap;
+        }
+        @if $grid-row-gap != 0 {
+            grid-row-gap: $grid-row-gap;
+        }
+    }
 }
 
-@function getGridSizeMobile() {
-    @return map-get($settings-grid, 'colsMobile');
-}
-
-@function getDesktopGutterSize() {
-    @return map-get($settings-grid, 'gutter-desktop');
-}
-
-@function getMobileGutterSize() {
-    @return map-get($settings-grid, 'gutter-mobile');
-}
-
-@function getGridBreakpoints() {
-    @return map-get($settings-grid, 'breakpoints');
-}
-
-@function getMobilePadding() {
-    @return map-get($settings-grid, 'mobile-padding');
+/**
+ * Grid value TODO
+ */
+@function gridValue($num1, $num2: 24) {
+    @return math.percentage(math.div($num1, $num2));
 }
