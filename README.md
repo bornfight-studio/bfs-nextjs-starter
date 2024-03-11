@@ -1,3 +1,5 @@
+![alt text](https://github.com/bornfight-studio/bfs-nextjs-starter/blob/master/cover.jpg?raw=true)
+
 # Bornfight Studio - Next.js starter
 
 BORNFIGHT STUDIO® project template based on webpack, es6 and scss
