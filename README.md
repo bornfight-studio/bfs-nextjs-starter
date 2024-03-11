@@ -5,8 +5,8 @@
 BORNFIGHT STUDIO® project template based on webpack, es6 and scss
 
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/bornfight-studio/bfs-nextjs-starter?style=flat-square)
-![GitHub issues](https://img.shields.io/github/issues/bornfight/b-creative?style=flat-square)
-![GitHub](https://img.shields.io/github/license/bornfight/b-creative?style=flat-square)
+![GitHub issues](https://img.shields.io/github/issues/bornfight-studio/bfs-nextjs-starter?style=flat-square)
+![GitHub](https://img.shields.io/github/license/bornfight-studio/bfs-nextjs-starter?style=flat-square)
 
 ## Versions
 
