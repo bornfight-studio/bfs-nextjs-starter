@@ -14,9 +14,14 @@ BORNFIGHT STUDIO® project template based on webpack, es6 and scss
 -   ReactDOM 18.2.0
 -   Node 20.x
 
-## Favicon generator
 
-https://realfavicongenerator.net/
+## Setup
+
+```bash
+nvm use
+yarn install
+yarn dev
+```
 
 ### (S)CSS
 
@@ -30,12 +35,16 @@ https://realfavicongenerator.net/
 ### Scripts
 
 ```bash
+yarn dev # build and watch file changes for development
 yarn build # build for production
 yarn start # run the application 
-yarn dev # build and watch file changes for development
+yarn lint # lint scss and js files with stylelint
 yarn format # format scss and js files with prettier
-yarn lint # lint scss files with stylelint
 ```
+
+## Favicon generator
+
+https://realfavicongenerator.net/
 
 
 ## License
