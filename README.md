@@ -40,21 +40,33 @@ yarn format # format scss and js files with prettier
 
 ## Custom hooks
 
-| useAccordion                                                                                          |
-| ----------------------------------------------------------------------------------------------------- |
-| opens and close accordion item                                                                        |
-| `JS const { clickAction, openedFlag } = useAccordion({ expandableWrapper, expandableInnerContent });` |
+#### - useAccordion -
 
-| useCreatePortalInBody                                         |
-| ------------------------------------------------------------- |
-| creates portal                                                |
-| `JS const children = useCreatePortalInBody( name, element );` |
+opens and close accordion item
 
-| useCurrentRefs                               |
-| -------------------------------------------- |
-| returns object with array of passed refs     |
-| `JS const refs = useCurrentRefs( items[] );` |
+```JS
+const { clickAction, openedFlag } = useAccordion({ expandableWrapper, expandableInnerContent });
+```
 
+&nbsp;
+
+#### - useCreatePortalInBody -
+
+creates portal
+
+```JS
+const children = useCreatePortalInBody( name, element );
+```
+
+&nbsp;
+
+#### - useCurrentRefs -
+
+returns object with array of passed refs
+
+```JS
+const refs = useCurrentRefs( items[] );
+```
 
 &nbsp;
 
@@ -62,7 +74,7 @@ yarn format # format scss and js files with prettier
 
 creates react compliant `setInterval()`
 
-```bash
+```JS
 const interval = useInterval( callback(), delay, deps );
 ```
 
@@ -72,7 +84,7 @@ const interval = useInterval( callback(), delay, deps );
 
 returns a boolean if the resolution si smaller/larger than the passed breakpoint
 
-```bash
+```JS
 const isMobile = useIsMobile( breakpoint );
 ```
 
@@ -82,7 +94,7 @@ const isMobile = useIsMobile( breakpoint );
 
 checks the device has touch and returns a boolean
 
-```bash
+```JS
 const isTouchDevice = useIsTouchDevice( );
 ```
 
@@ -92,7 +104,7 @@ const isTouchDevice = useIsTouchDevice( );
 
 returns mouse event props
 
-```bash
+```JS
 const mouseMoveDate = useMouse( );
 ```
 
@@ -102,7 +114,7 @@ const mouseMoveDate = useMouse( );
 
 tracks click event outside the element
 
-```bash
+```JS
 const clickOutside = useOutsideClick( ref, handler(), options{} );
 ```
 
@@ -112,7 +124,7 @@ const clickOutside = useOutsideClick( ref, handler(), options{} );
 
 checks if previous value is different then current
 
-```bash
+```JS
 const isPreviousValueDifferent = usePreviousDifferent( currentValue );
 ```
 
@@ -122,7 +134,7 @@ const isPreviousValueDifferent = usePreviousDifferent( currentValue );
 
 window custom resize event
 
-```bash
+```JS
 const customWindowResize = useTriggerWindowResize( );
 window.addEventListener('resize', () => { ... })
 ```
@@ -133,7 +145,7 @@ window.addEventListener('resize', () => { ... })
 
 window resize event
 
-```bash
+```JS
 const windowResize = useWindowResize( callback() );
 ```
 
@@ -143,7 +155,7 @@ const windowResize = useWindowResize( callback() );
 
 returns window scroll position
 
-```bash
+```JS
 const scrollPosition = useWindowScrollPosition( ) // { scrollX, scrollY };
 ```
 
@@ -153,7 +165,7 @@ const scrollPosition = useWindowScrollPosition( ) // { scrollX, scrollY };
 
 returns window size
 
-```bash
+```JS
 const windowSize = useWindowSize( ) // { width, height };
 ```
 
