@@ -38,6 +38,87 @@ yarn lint # lint scss and js files with stylelint
 yarn format # format scss and js files with prettier
 ```
 
+## Custom hooks
+
+#### - useAccordion -
+opens and close accordion item
+```bash
+const { clickAction, openedFlag } = useAccordion({ expandableWrapper, expandableInnerContent });
+```
+&nbsp;
+#### - useCreatePortalInBody -
+creates portal
+```bash
+const children = useCreatePortalInBody( name, element );
+```
+&nbsp;
+#### - useCurrentRefs -
+returns object with array of passed refs
+```bash
+const refs = useCurrentRefs( items[] );
+```
+&nbsp;
+#### - useInterval -
+creates react compliant `setInterval()`
+```bash
+const interval = useInterval( callback(), delay, deps );
+```
+&nbsp;
+#### - useIsMobile -
+returns a boolean if the resolution si smaller/larger than the passed breakpoint 
+```bash
+const isMobile = useIsMobile( breakpoint );
+```
+&nbsp;
+#### - useIsTouchDevice -
+checks the device has touch and returns a boolean
+```bash
+const isTouchDevice = useIsTouchDevice( );
+```
+&nbsp;
+#### - useMouse -
+returns mouse event props
+```bash
+const mouseMoveDate = useMouse( );
+```
+&nbsp;
+#### - useOutsideClick -
+tracks click event outside the element
+```bash
+const clickOutside = useOutsideClick( ref, handler(), options{} );
+```
+&nbsp;
+#### - usePreviousDifferent -
+checks if previous value is different then current
+```bash
+const isPreviousValueDifferent = usePreviousDifferent( currentValue );
+```
+&nbsp;
+#### - useTriggerWindowResize -
+window custom resize event
+```bash
+const customWindowResize = useTriggerWindowResize( );
+window.addEventListener('resize', () => { ... })
+```
+&nbsp;
+#### - useWindowResize -
+window resize event
+```bash
+const windowResize = useWindowResize( callback() );
+```
+&nbsp;
+#### - useWindowScrollPosition -
+returns window scroll position 
+```bash
+const scrollPosition = useWindowScrollPosition( ) // { scrollX, scrollY };
+```
+&nbsp;
+#### - useWindowSize -
+returns window size 
+```bash
+const windowSize = useWindowSize( ) // { width, height };
+```
+
 ## Favicon generator
 
 https://realfavicongenerator.net/

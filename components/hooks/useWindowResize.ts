@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 
-const useWindowResize = func => {
+const useWindowResize = (func: () => void) => {
     useEffect(() => {
         if (typeof window !== 'undefined') {
             window.addEventListener('resize', func);
