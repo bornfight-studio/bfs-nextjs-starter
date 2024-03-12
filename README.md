@@ -15,9 +15,9 @@
 ## Setup
 
 ```bash
-nvm use         # se
-yarn install
-yarn dev
+nvm use         # sets node and npm version
+yarn install    # installs required packages
+yarn dev        # starts local dev environment
 ```
 
 ### (S)CSS
