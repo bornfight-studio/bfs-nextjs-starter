@@ -4,7 +4,7 @@
  * @param {number} delay - The delay between each interval
  */
 
-import { useEffect } from 'react'
+import { useEffect } from 'react';
 
 interface useIntervalProps {
     callback: () => void;
@@ -12,11 +12,11 @@ interface useIntervalProps {
     deps: any[];
 }
 
-const useInterval = ({callback, delay = 1000, deps = []}: useIntervalProps) => {
+const useInterval = ({ callback, delay = 1000, deps = [] }: useIntervalProps) => {
     useEffect(() => {
-        const interval = setInterval(callback, delay)
-        return () => clearInterval(interval)
-    }, [delay, ...deps])
-}
+        const interval = setInterval(callback, delay);
+        return () => clearInterval(interval);
+    }, [callback, delay, deps]);
+};
 
-export default useInterval
+export default useInterval;
