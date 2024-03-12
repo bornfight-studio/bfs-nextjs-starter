@@ -15,7 +15,7 @@
 ## Setup
 
 ```bash
-nvm use
+nvm use         # se
 yarn install
 yarn dev
 ```
@@ -31,11 +31,11 @@ yarn dev
 ### Scripts
 
 ```bash
-yarn dev # build and watch file changes for development
-yarn build # build for production
-yarn start # run the application
-yarn lint # lint scss and js files with stylelint
-yarn format # format scss and js files with prettier
+yarn dev      # build and watch file changes for development
+yarn build    # build for production
+yarn start    # run the application
+yarn lint     # lint scss and js files with stylelint
+yarn format   # format scss and js files with prettier
 ```
 
 ## Custom hooks
