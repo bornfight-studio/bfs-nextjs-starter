@@ -40,45 +40,12 @@ yarn format   # format scss and js files with prettier
 
 ## Custom hooks
 
-#### - useAccordion -
-
-opens and close accordion item
-
-```JS
-const { clickAction, openedFlag } = useAccordion({ expandableWrapper, expandableInnerContent });
-```
-
-&nbsp;
-
-#### - useCreatePortalInBody -
-
-creates portal
-
-```JS
-const children = useCreatePortalInBody( name, element );
-```
-
-&nbsp;
-
-#### - useCurrentRefs -
-
-returns object with array of passed refs
-
-```JS
-const refs = useCurrentRefs( items[] );
-```
-
-&nbsp;
-
-#### - useInterval -
-
-creates react compliant `setInterval()`
-
-```JS
-const interval = useInterval( callback(), delay, deps );
-```
-
-&nbsp;
+| Hook name             | Description                              | Usage                                                                                                  |
+| --------------------- | ---------------------------------------- | ------------------------------------------------------------------------------------------------------ |
+| useAccordion          | opens and close accordion item           | `JS const { clickAction, openedFlag } = useAccordion({ expandableWrapper, expandableInnerContent }); ` |
+| useCreatePortalInBody | creates portal                           | `JS const children = useCreatePortalInBody( name, element ); `                                         |
+| useCurrentRefs        | returns object with array of passed refs | `JS const refs = useCurrentRefs( items[] ); `                                                          |
+| useInterval           | creates react compliant `setInterval()`  | `JS const interval = useInterval( callback(), delay, deps ); `                                         |
 
 #### - useIsMobile -
 
