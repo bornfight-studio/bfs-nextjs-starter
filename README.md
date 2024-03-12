@@ -7,7 +7,7 @@
 
 ## Versions
 
--   Next.js 13.3.0
+-   Next.js 14.1.3
 -   React 18.2.0
 -   ReactDOM 18.2.0
 -   Node 20.x
