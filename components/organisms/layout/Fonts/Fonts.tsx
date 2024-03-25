@@ -9,6 +9,9 @@ const Fonts = () => (
     // eslint-disable-next-line react/no-unknown-property
     <style jsx global>
         {`
+            :root {
+                --font-main: ${fontMain.style.fontFamily};
+            }
             html {
                 font-family: ${fontMain.style.fontFamily};
                 font-weight: 400;

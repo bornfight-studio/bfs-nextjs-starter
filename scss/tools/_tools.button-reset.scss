@@ -3,7 +3,7 @@
  * Make button to look like text
  * Useful for any kind of UI based on <button> element
  * usage:
- * @include button-reset{}
+ * @include button-reset;
  */
 @mixin button-reset() {
     border: none;
@@ -31,10 +31,12 @@
     font-style: inherit;
     font-weight: inherit;
     width: auto;
+    height: auto;
     background: transparent;
     line-height: normal;
     -webkit-font-smoothing: inherit;
     -moz-osx-font-smoothing: inherit;
+    -webkit-tap-highlight-color: transparent;
 
     &:hover,
     &:focus,

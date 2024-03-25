@@ -1,51 +1,56 @@
-//desktop AR's
-.u-ar-16-9 {
-    padding-bottom: percentage(9, 16);
+/**
+ * Ratio
+ * create ratio-bound content blocks, to keep media (e.g. images, videos) in their correct aspect ratios
+ * 1. default cropping is a 1:1 ratio (i.e. a perfect square)
+ * inspiration:
+ * https://github.com/inuitcss/inuitcss/blob/19d0c7e/objects/_objects.ratio.scss
+ */
+.u-ratio {
+    position: relative;
+    display: block;
+    overflow: hidden;
+
+    &:before {
+        display: block;
+        padding-bottom: 100%; // [1]
+        width: 100%;
+        content: '';
+    }
 }
 
-.u-ar-8-9 {
-    padding-bottom: percentage(9, 8);
+.u-ratio__inner,
+.u-ratio > img,
+.u-ratio > video,
+.u-ratio > iframe,
+.u-ratio > embed,
+.u-ratio > object {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
-.u-ar-1-1 {
-    padding-bottom: 100%;
-}
+/**
+ * Ratio variants
+ * generate a series of ratio classes
+ * usage:
+ * <div class="u-ratio u-ratio--16:9"></div>
+ */
+@each $ratio in $settings-ratio {
+    @each $antecedent, $consequent in $ratio {
+        @if (type-of($antecedent) != number) {
+            @error "`#{$antecedent}` needs to be a number.";
+        }
 
-.u-ar-2-1 {
-    padding-bottom: percentage(1, 2);
-}
+        @if (type-of($consequent) != number) {
+            @error "`#{$consequent}` needs to be a number.";
+        }
 
-.u-ar-1-2 {
-    padding-bottom: percentage(2, 1);
-}
-
-.u-ar-4-3 {
-    padding-bottom: percentage(3, 4);
-}
-
-.u-ar-3-4 {
-    padding-bottom: percentage(4, 3);
-}
-
-.u-ar-3-4 {
-    padding-bottom: percentage(4, 3);
-}
-
-.u-ar-3-2 {
-    padding-bottom: percentage(2, 3);
-}
-
-.u-ar-2-3 {
-    padding-bottom: percentage(3, 2);
-}
-
-.u-ar-auto {
-    padding-bottom: unset;
-}
-
-//mobile AR's
-.u-ar-md-2-3 {
-    @include mq('md') {
-        padding-bottom: percentage(3, 2);
+        .u-ratio--#{$antecedent}\-#{$consequent} {
+            &:before {
+                padding-bottom: percentage($consequent, $antecedent);
+            }
+        }
     }
 }

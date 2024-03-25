@@ -14,7 +14,7 @@ body {
 }
 
 body {
-    @extend .u-b0;
+    @include b0;
 }
 
 *,

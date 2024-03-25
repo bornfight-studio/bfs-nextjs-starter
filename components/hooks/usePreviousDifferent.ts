@@ -1,6 +1,6 @@
 import { useRef, useEffect } from 'react';
 
-function usePreviousDifferent(currentValue) {
+function usePreviousDifferent(currentValue: any) {
     const previousRef = useRef(null);
     const previousRef2 = useRef(null);
 
